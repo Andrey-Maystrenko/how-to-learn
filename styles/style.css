@@ -54,6 +54,7 @@
   line-height: 25px;
   font-weight: normal;
   color:#2F80ED;
+  text-decoration:none;
 }
 .header__main-illustration{
   width: 765px;
@@ -76,13 +77,13 @@
   display: flex;
   justify-content: center;
  }
-.description-two-columns{
+.two-columns{
   width: 80%;
   display: flex;
   margin: 100px 0 0;
   justify-content: space-between;
 }
-.description-two-columns__brief{
+.two-columns__brief{
   width: 175px;
   font-size: 18px;
   font-weight: normal;
@@ -90,27 +91,27 @@
   color: #2F80ED;
   font-style: normal;
   margin: 0;
-  }
-.description-two-columns__main-text{
+}
+.two-columns__main-text{
   width: 80%;
   min-width: 784px;
 }
-.description-two-columns__paragraph{
+.two-columns__paragraph{
   line-height: 34px;
   font-size: 24px;
   font-style: normal;
   margin: 0 0 30px;
 }
-.description-two-columns__span-accent{
+.two-columns__span-accent{
   font-weight: bold;
 }
-.description-two-columns__paragraph:last-of-type{
+.two-columns__paragraph:last-of-type{
   line-height: 34px;
   font-size: 24px;
   font-style: normal;
   margin: 0;
 }
-.digits-title{
+.section-title{
   width: 60%;
   margin: 100px auto 20px;
   font-size: 60px;
@@ -118,7 +119,7 @@
   line-height: 1.2;
   text-align: center;
 }
-.digits-subtitle{
+.section-subtitle{
   width: 60%;
   margin: 0 auto 0;
   font-size: 24px;
@@ -126,40 +127,43 @@
   line-height: 34px;
   text-align: center;
 }
-.digits-table{
+.table{
   width: 1100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto 100px;
 }
-.digits-table__cell{
+.table__cell{
   width: 250px;
   margin-top: 60px;
 }
-.digits-table__heading{
+.table__heading{
   font-size: 24px;
   line-height: 1.15;
   font-weight: bold;
   margin: 0 0 20px;
 }
-.digits-table__text{
+.table__text{
   font-size: 18px;
   line-height: 1.2;
   font-weight: normal;
   margin: 0;
 }
-.digits-table__text:nth-of-type(2) {
+.table__text:nth-of-type(2) {
   font-size: 18px;
   line-height: 1.2;
   font-weight: normal;
   margin-top: 20px;
 }
 .feynman{
-  min-height: 790px;
-  background-color: #f2f2f2;
-  position: relative;
+  min-height: 890px;
   padding-top: 100px;
+  background-color: #f2f2f2;
+  background-image: url(../images/feynman.png);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  position: relative;
 }
 .feynman__title{
   width: 648px;
@@ -189,13 +193,6 @@
   right: 48px;
   text-decoration: none;
 }
-.feynman__main-illustration{
-  width: 867px;
-  height: 637px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
 .kaufman{
   background-color: #1f1f1f;
   padding: 90px 0 90px;
@@ -203,7 +200,7 @@
   position: relative;
   z-index: 0;
 }
-.kaufman-title_theme_dark{
+.section-title_theme_dark{
   width: 60%;
   margin: 0 auto 0;
   font-size: 60px;
@@ -212,8 +209,9 @@
   text-align: center;
   color: white;
   z-index: 2;
+  position:relative;
 }
-.kaufman-subtitle_theme_dark{
+.section-subtitle_theme_dark{
   width: 60%;
   margin: 20px auto 0;
   font-size: 24px;
@@ -223,7 +221,7 @@
   color: white;
   z-index: 2;
 }
-.kaufman-table_theme_dark{
+.section-table_theme_dark{
   width: 1100px;
   display: flex;
   flex-wrap: wrap;
@@ -233,13 +231,13 @@
   z-index: 2;
   position:relative;
 }
-.kaufman-table__cell_theme_dark{
+.table__cell_theme_dark{
   width: 200px;
   margin-top: 80px;
   color: white;
   z-index: 2;
 }
-.kaufman-table__heading_theme_dark{
+.table__heading_theme_dark{
   font-size: 24px;
   line-height: 1.15;
   font-weight: bold;
@@ -247,7 +245,7 @@
   color: white;
   z-index: 2;
 }
-.kaufman-table__text_theme_dark{
+.table__text_theme_dark{
   font-size: 18px;
   line-height: 1.2;
   font-weight: normal;
@@ -276,7 +274,7 @@
   display: flex;
   justify-content: space-between;
 }
-.footer__column-content_copyright{
+.footer__column_content_copyright{
   flex-basis: 711px;
   display: flex;
   flex-direction: column;
@@ -310,13 +308,11 @@
   color: white;
   text-decoration: none;
   margin: 0;
-}
-.footer__social-icon {
   display: flex;
-  justify-content: left; 
+  justify-content: left;
 }
-.icon{
-  margin-right: 10px;
+.social-icon{
+  margin: 0 10px 0 0;
 }
 .list{
   list-style: none;
