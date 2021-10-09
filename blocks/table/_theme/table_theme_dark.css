@@ -1,6 +1,5 @@
-.table_theme_dark{
-  margin: 0 auto 0;
-  color: white;
-  z-index: 2;
-  position:relative;
+.table_theme_dark {
+  margin  : 0 auto 0;
+  color   : white;
+  position: relative;
 }
